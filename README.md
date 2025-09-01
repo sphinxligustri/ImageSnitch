@@ -2,7 +2,7 @@
 Find out where an image has been used on the internet.
 
 # Prerequisites
-* Register at (SerpApi)[https://serpapi.com/] and get yourself an API key.
+* Register at [SerpApi](https://serpapi.com) and get yourself an API key.
 * Bash
 * Python
 
