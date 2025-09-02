@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Description
-# This script executes a Python script that handles SerpApi queries for 
+# This script executes a Python script that handles SerpApi queries for
 # exact image matches in Google Image Search.
 # Queries are run per link provided by reading a file with links.
 
@@ -23,6 +23,6 @@ if [ -e "${file_name}" ]; then
         echo $#
     fi
     while read line; do
-        python image_snitch.py -k ${api_key} -d ${target_dir} -s ${line}
+        [ ${#line} -gt 3 ] && python image_snitch.py -k ${api_key} -d ${target_dir} -s ${line}
     done < "${file_name}"
 fi
